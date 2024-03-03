@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+.html{
+    font-size: 25px;
+}
+h1{
+    font-size: 12rem;
+    line-height: 10rem;
+    font-weight: 900;
+}
+h2{
+    font-size: 5rem;
+    line-height: 5rem;
+}
+p{
+    font-size: 12rem;
+    line-height: 0rem;
+    font-weight: 900;
+}
+.header{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 80vh;
+    padding: 0 20px;
+}
+.header-sub-title{
+    width: 40%;
+    height: 10vh;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 60vh;
+    padding-right: 58vh;
+    text-align: center;
+    color: white;
+    background-color: #010056;
+}
+.header-sub-img{
+    width: 20vh;
+    height: 15vh;
+    position: absolute;
+    top: 32.5vh;
+    bottom: 0;
+    left: 125vh;
+    right: 0;
+    z-index: 1;
+}
+.header-title{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+.title-bottom{
+    height: 5rem;
+    overflow: hidden;
+    color: #cf0000;
+    background-color: rgb(255, 255, 255);
+}
+.title-top{
+    height: 5rem;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    color: #cf0000;
+    transition: 1s;
+}
+
+.header-title:hover .title-top{
+    margin-bottom: 7rem;
+}
+.header-title:hover .title-bottom{
+    margin-bottom: 0rem;
+}
+
+.fame-hall{
+    width: 100%;
+    height: 90vh;
+}
+.fame-hall-title{
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-left: 26vh;
+}
+.fame-hall-card{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    height: 56vh;
+    width: 100%;
+}
+.fame-hall-card-item{
+    height: 57.5vh;
+    width: 30vh;
+    transition: 1s all ease;
+    background-repeat: no-repeat;
+}
+.fame-hall-card-item:hover{
+    height: 57.5vh;
+    width: 75vh;
+}
+.fame-hall-card-item:first-of-type{
+    background: url(images/Gyllenhaal.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.fame-hall-card-item:nth-of-type(2){
+    background: url(images/keanu-reeves.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.fame-hall-card-item:nth-of-type(3){
+    background: url(images/batman.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75vh 58vh;
+}
+.fame-hall-card-item:nth-of-type(4){
+    background: url(images/snake.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90vh; 
+}
+.fame-hall-card-item:last-of-type{
+    background: url(images/smile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.fame-hall-title{
+    margin-bottom: 25px;
+}
+
+.collecion{
+    width: 100%;
+    height: 120vh;
+}
+.collecion-title{
+    width: 100%;
+    height: 6vh;
+    font-size: 14vh;
+    font-weight: 700;
+    margin-left: 22vh;
+}
+.collecion-card-window{
+    margin-top: 5vh;
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.collecion-card{
+    width: 95%;
+    height: 103vh;
+    display: flex;
+    justify-content: center;
+}
+.collection-card-items {
+    position: relative;
+    height: 49vh;
+    width: 35vh;
+    margin-right: 3vh;
+    margin-bottom: 2vh;
+  }
+.collecion-card-img{
+    width: 35vh;
+    height: 49vh;
+}
+  .collecion-card-description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1c1b1bac;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s, visibility 1s;
+    font-size: 2vh;
+    padding-top: 5vh;
+    text-align: center;
+  }
+.description-text1{
+    font-size: 3.5vh;
+    top: 5vh;
+    position: relative;    
+}
+.description-text21{
+    position: relative;
+    float: right;
+    top: 15vh;
+    right: 2vh;
+    font-weight: 500;
+    font-size: 2.5vh;
+}
+.description-text22{
+    color: #47B198;
+}
+.description-kinopoisk{
+    position: relative;
+    float: right;
+    top: 25vh;
+    right: 2vh;
+    font-weight: 400;
+    text-decoration: none;
+    color: #47B198;
+    line-height: 2vh;
+    font-size: 3vh;
+}
+.description-button{
+    position: relative;
+    top: 33vh;
+    width: 40vh;
+    height: 8vh;
+    background-color: #47B198;
+    color: white;
+    border-radius: 0.5vh;
+    font-size: 3.5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    text-decoration: none;
+}
+.collection-card-items:hover .collecion-card-description {
+    visibility: visible;
+    opacity: 1;
+}
+.jopa{
+    font-size: 6vh;
+    line-height: 5vh;
+    color: red;
+}
+.description-button-predator{
+    position: relative;
+    top: 20vh;
+    width: 25vh;
+    height: 8vh;
+    background-color: #47B198;
+    color: white;
+    border-radius: 0.5vh;
+    font-size: 3.5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    text-decoration: none;
+}
+.description-text21-predator{
+    position: relative;
+    float: right;
+    text-align: end;
+    top: 8vh;
+    right: 2vh;
+    font-weight: 500;
+    font-size: 2.5vh;
+    line-height: 3vh;
+}
+.description-kinopoisk-predator{
+    position: relative;
+    float: right;
+    top: 13vh;
+    right: 2vh;
+    font-weight: 400;
+    text-decoration: none;
+    color: #47B198;
+    line-height: 2vh;
+    font-size: 3vh;
+}
+.description-text21-driver{
+    position: relative;
+    float: right;
+    text-align: end;
+    top: 12vh;
+    right: 2vh;
+    font-weight: 500;
+    font-size: 2.5vh;
+    line-height: 3vh;
+}
+.description-kinopoisk-driver{
+    position: relative;
+    float: right;
+    top: 18vh;
+    right: 2vh;
+    font-weight: 400;
+    text-decoration: none;
+    color: #47B198;
+    line-height: 2vh;
+    font-size: 3vh;
+}
+.description-button-driver{
+    position: relative;
+    top: 25vh;
+    width: 40vh;
+    height: 8vh;
+    background-color: #47B198;
+    color: white;
+    border-radius: 0.5vh;
+    font-size: 3.5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    text-decoration: none;
+}
+.description-text21-venom{
+    position: relative;
+    float: right;
+    text-align: end;
+    top: 12vh;
+    right: 2vh;
+    font-weight: 500;
+    font-size: 2.5vh;
+    line-height: 3vh;
+}
+.description-kinopoisk-venom{
+    position: relative;
+    float: right;
+    top: 20vh;
+    right: 2vh;
+    font-weight: 400;
+    text-decoration: none;
+    color: #47B198;
+    line-height: 2vh;
+    font-size: 3vh;
+}
+.description-button-venom{
+    position: relative;
+    top: 26vh;
+    width: 40vh;
+    height: 8vh;
+    background-color: #47B198;
+    color: white;
+    border-radius: 0.5vh;
+    font-size: 3.5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    text-decoration: none;
+}
+.description-text1-potter{
+    font-size: 3.5vh;
+    top: 5vh;
+    position: relative;  
+    line-height: 3vh;  
+}
+.description-text21-potter{
+    position: relative;
+    float: right;
+    text-align: end;
+    top: 9vh;
+    right: 2vh;
+    font-weight: 500;
+    font-size: 2.3vh;
+    line-height: 3vh;
+}
+.description-kinopoisk-potter{
+    position: relative;
+    float: right;
+    top: 16vh;
+    right: 2vh;
+    font-weight: 400;
+    text-decoration: none;
+    color: #47B198;
+    line-height: 2vh;
+    font-size: 3vh;
+}
+.description-button-potter{
+    position: relative;
+    top: 21vh;
+    width: 40vh;
+    height: 8vh;
+    background-color: #47B198;
+    color: white;
+    border-radius: 0.5vh;
+    font-size: 3.5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    text-decoration: none;
+}
+.description-text1-day{
+    font-size: 3.5vh;
+    top: 3vh;
+    position: relative;  
+    line-height: 4vh; 
+}
+.description-text21-day{
+    position: relative;
+    float: right;
+    text-align: end;
+    top: 7vh;
+    right: 2vh;
+    font-weight: 500;
+    font-size: 2.3vh;
+}
+.description-kinopoisk-day{
+    position: relative;
+    float: right;
+    top: 16vh;
+    right: 2vh;
+    font-weight: 400;
+    text-decoration: none;
+    color: #47B198;
+    line-height: 2vh;
+    font-size: 3vh;
+}
+.description-button-day{
+    position: relative;
+    top: 22vh;
+    width: 40vh;
+    height: 8vh;
+    background-color: #47B198;
+    color: white;
+    border-radius: 0.5vh;
+    font-size: 3.5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    text-decoration: none;
+}
+.description-text21-gun{
+    position: relative;
+    float: right;
+    text-align: end;
+    top: 12vh;
+    right: 2vh;
+    font-weight: 500;
+    font-size: 2.5vh;
+    line-height: 3vh;
+}
+.description-button-gun{
+    position: relative;
+    top: 30vh;
+    width: 40vh;
+    height: 8vh;
+    background-color: #47B198;
+    color: white;
+    border-radius: 0.5vh;
+    font-size: 3.5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    text-decoration: none;
+}
+.footer-end{
+    width: 100%;
+    height: 25vh;
+    background-color: #2E292A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-text{
+    width: 150vh;
+    margin-left: 2vh;
+    font-size: 5vh;
+    color: white;
+}
+.click-here{
+    float: right;
+    width: 25vh;
+    height: 9vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: #cf0000;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 5vh;
+    font-weight: 900;
+    border-radius: 1vh;
+}
+.more1{
+    text-decoration: none;
+    float: right;
+    margin-right: 34vh;
+    font-family: 'Montserrat';
+    font-size: 8vh;
+    font-weight: 500;
+    color: black;
+}
